@@ -16,9 +16,9 @@ module clrx_intf # (
     input           XCLK_p, XCLK_n,
     input  [3:0]    XCHN_p, XCHN_n,
 
-    // // Receivers Channel 2 - MEDIUM
-    // input           YCLK_p, YCLK_n,
-    // input  [3:0]    YCHN_p, YCHN_n,
+    // Receivers Channel 2 - MEDIUM
+    input           YCLK_p, YCLK_n,
+    input  [3:0]    YCHN_p, YCHN_n,
 
 
     // AXIS Video Stuff
@@ -28,7 +28,7 @@ module clrx_intf # (
     output           tuser, // start of frame
     output           tlast, // end of line
 
-    output           lcd,       // LED PLL/MMCM locked 
+    output           lckd,       // LED PLL/MMCM locked 
     output           px_val     // Px ready/valid
 
     // // Outputs 
@@ -95,7 +95,7 @@ module clrx_intf # (
     assign rst = hw_rst | !rstn;
     assign idly_rst = rst | !locked;
     
-    assign lcd = locked;
+    assign lckd = locked;
     assign px_val = px_rdy;
 
 

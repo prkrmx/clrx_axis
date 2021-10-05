@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct  3 14:26:44 2021
+# Process ID: 59083
+# Current directory: /home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.runs/synth_1
+# Command line: vivado -log clrx_axis_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clrx_axis_v1_0.tcl
+# Log file: /home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.runs/synth_1/clrx_axis_v1_0.vds
+# Journal file: /home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source clrx_axis_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/max/msync/xips/clrx_axis/clrx_axis_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/max/vivado_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top clrx_axis_v1_0 -part xc7z045ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59146
+WARNING: [Synth 8-2507] parameter declaration becomes local in clrx_axis_v1_0_M00_AXIS with formal parameter declaration list [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_M00_AXIS.v:63]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2502.309 ; gain = 0.000 ; free physical = 12743 ; free virtual = 21127
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clrx_axis_v1_0' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (1#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6157] synthesizing module 'clrx_axis_v1_0_S00_AXI' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'clrx_axis_v1_0_S00_AXI' (2#1) [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clrx_axis_v1_0_M00_AXIS' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_M00_AXIS.v:4]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_M00_AXIS.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'clrx_axis_v1_0_M00_AXIS' (3#1) [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clrx_intf' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clrx_intf.v:5]
+	Parameter DEBUG bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (4#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
+INFO: [Synth 8-6157] synthesizing module 'node' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/node.v:41]
+	Parameter LINES bound to: 4 - type: integer 
+	Parameter CLKIN_PERIOD bound to: 13.332000 - type: double 
+	Parameter REF_FREQ bound to: 200.000000 - type: double 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter USE_PLL bound to: FALSE - type: string 
+	Parameter DATA_FORMAT bound to: PER_LINE - type: string 
+	Parameter CLK_PATTERN bound to: 7'b1100011 
+	Parameter RX_SWAP_MASK bound to: 16'b0000000000000000 
+	Parameter DEBUG bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'sitpo' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/sitpo.v:19]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter SWAP_MASK bound to: 1'b0 
+	Parameter REF_FRQ bound to: 200.000000 - type: double 
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (5#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51672]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (6#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51672]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53766]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 5 - type: integer 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (7#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53766]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58568]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (8#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58568]
+INFO: [Synth 8-6155] done synthesizing module 'sitpo' (9#1) [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/sitpo.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clkgn' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:28]
+	Parameter CLKIN_PERIOD bound to: 13.332000 - type: double 
+	Parameter REF_FREQ bound to: 200.000000 - type: double 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter USE_PLL bound to: FALSE - type: string 
+	Parameter CLK_PATTERN bound to: 7'b1100011 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60083]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 14.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 13.332000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 4.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.100000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (10#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60083]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT1' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_inst' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+WARNING: [Synth 8-7023] instance 'MMCME2_BASE_inst' of module 'MMCME2_BASE' has 18 connections declared, but only 7 given [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:120]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DIFF_OUT' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DIFF_OUT' (11#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'idelay_cm' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:164]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'idelay_cm' [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:164]
+WARNING: [Synth 8-7023] instance 'idelay_cm' of module 'IDELAYE2' has 12 connections declared, but only 10 given [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:164]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (12#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1410]
+	Parameter BUFR_DIVIDE bound to: 4 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (13#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'clkgn' (14#1) [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'node' (15#1) [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/node.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'clrx_intf' (16#1) [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/sources_1/new/clrx_intf.v:5]
+WARNING: [Synth 8-7071] port 'tready' of module 'clrx_intf' is unconnected for instance 'clrx_inst' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+WARNING: [Synth 8-7071] port 'tdata' of module 'clrx_intf' is unconnected for instance 'clrx_inst' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+WARNING: [Synth 8-7071] port 'tvalid' of module 'clrx_intf' is unconnected for instance 'clrx_inst' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+WARNING: [Synth 8-7071] port 'tuser' of module 'clrx_intf' is unconnected for instance 'clrx_inst' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+WARNING: [Synth 8-7071] port 'tlast' of module 'clrx_intf' is unconnected for instance 'clrx_inst' [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+WARNING: [Synth 8-7023] instance 'clrx_inst' of module 'clrx_intf' has 18 connections declared, but only 13 given [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'clrx_axis_v1_0' (17#1) [/home/max/msync/xips/clrx_axis/clrx_axis_1.0/hdl/clrx_axis_v1_0.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2502.309 ; gain = 0.000 ; free physical = 11918 ; free virtual = 20303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2502.309 ; gain = 0.000 ; free physical = 11914 ; free virtual = 20299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2502.309 ; gain = 0.000 ; free physical = 11914 ; free virtual = 20299
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2502.309 ; gain = 0.000 ; free physical = 11908 ; free virtual = 20293
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/constrs_1/new/zc706_main.xdc]
+Finished Parsing XDC File [/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.srcs/constrs_1/new/zc706_main.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2566.340 ; gain = 0.000 ; free physical = 12664 ; free virtual = 21048
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 40 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2566.340 ; gain = 0.000 ; free physical = 12664 ; free virtual = 21048
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12740 ; free virtual = 21125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12740 ; free virtual = 21125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12740 ; free virtual = 21125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'clrx_axis_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            INIT_COUNTER |                               01 |                               01
+             SEND_STREAM |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'clrx_axis_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12731 ; free virtual = 21116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 10    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12717 ; free virtual = 21106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12595 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12594 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12594 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12591 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12591 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12591 ; free virtual = 20984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12590 ; free virtual = 20983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12590 ; free virtual = 20983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12590 ; free virtual = 20983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     4|
+|2     |BUFR            |     1|
+|3     |IDELAYCTRL      |     1|
+|4     |IDELAYE2        |     5|
+|5     |ISERDESE2       |     5|
+|6     |LUT1            |    18|
+|7     |LUT2            |     8|
+|8     |LUT3            |    19|
+|9     |LUT4            |    32|
+|10    |LUT5            |     8|
+|11    |LUT6            |   109|
+|12    |MMCME2_BASE     |     1|
+|13    |MUXF7           |    29|
+|14    |RAM32X1D        |    40|
+|15    |FDCE            |    29|
+|16    |FDPE            |     9|
+|17    |FDRE            |   329|
+|18    |FDSE            |     5|
+|19    |IBUF            |    51|
+|20    |IBUFDS          |     5|
+|21    |IBUFDS_DIFF_OUT |     1|
+|22    |OBUF            |    81|
+|23    |OBUFDS          |     5|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12590 ; free virtual = 20983
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2566.340 ; gain = 0.000 ; free physical = 12645 ; free virtual = 21038
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2566.340 ; gain = 64.031 ; free physical = 12645 ; free virtual = 21038
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2566.340 ; gain = 0.000 ; free physical = 12633 ; free virtual = 21031
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2566.340 ; gain = 0.000 ; free physical = 12653 ; free virtual = 21051
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 40 instances
+
+Synth Design complete, checksum: 3609bfe7
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2566.340 ; gain = 72.035 ; free physical = 12802 ; free virtual = 21200
+INFO: [Common 17-1381] The checkpoint '/home/max/msync/xips/clrx_axis/edit_clrx_axis_v1_0.runs/synth_1/clrx_axis_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clrx_axis_v1_0_utilization_synth.rpt -pb clrx_axis_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  3 14:27:11 2021...

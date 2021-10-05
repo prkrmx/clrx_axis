@@ -69,9 +69,9 @@
 #create_clock -period 11.764 [get_ports CLR_XCLK_P]
 
 ## Clock group constraint to ensure correct clock skew for ISERDESE
-#set_property CLOCK_DELAY_GROUP ioclk_group_clkdv [get_nets main_dsn_i/clrx_top_0/inst/node_inst/clkgn_inst/BUFR_inst_0]
+#set_property CLOCK_DELAY_GROUP ioclk_group_clkdv [get_nets node1_inst/clkgn_inst/BUFR_inst_0]
 
-#set_false_path -to [get_pins main_dsn_i/clrx_top_0/inst/node_inst/clkgn_inst/iserdes_mm/DDLY]
+#set_false_path -to [get_pins node1_inst/clkgn_inst/iserdes_mm/DDLY]
 #set_false_path -to [get_pins {main_dsn_i/clrx_top_0/inst/node_inst/rxd[*].sitpo_inst/px_data_reg[*]/D}]
 #set_false_path -to [get_pins {main_dsn_i/clrx_top_0/inst/node_inst/clkgn_inst/ram_lst_reg[*]/D}]
 #set_false_path -to [get_pins {main_dsn_i/clrx_top_0/inst/node_inst/rxd[*].sitpo_inst/ram_lst_reg[*]/D}]
@@ -92,7 +92,7 @@
 
 ## J3 (Medium/Full)
 #set_property PACKAGE_PIN V27 [get_ports CLR_Y_P[3]];    ## FMC_HPC_LA22_P
-#set_property PACKAGE_PIN W30 [get_ports CLR_Y_N[3]];    ## FMC_HPC_LA22_N
+#set_property PACKAGE_PIN W28 [get_ports CLR_Y_N[3]];    ## FMC_HPC_LA22_N
 #set_property PACKAGE_PIN W29 [get_ports CLR_Y_P[2]];    ## FMC_HPC_LA21_P
 #set_property PACKAGE_PIN W30 [get_ports CLR_Y_N[2]];    ## FMC_HPC_LA21_N
 #set_property PACKAGE_PIN U25 [get_ports CLR_Y_P[1]];    ## FMC_HPC_LA20_P
@@ -104,14 +104,14 @@
 #set_property PACKAGE_PIN AG20 [get_ports CLR_YCLK_N];   ## FMC_HPC_LA00_CC_N
 #create_clock -period 11.764 [get_ports CLR_YCLK_P]
 
-#set_property PACKAGE_PIN Y22 [get_ports CLR_Y_P[3]];    ## FMC_HPC_LA15_P
-#set_property PACKAGE_PIN Y23 [get_ports CLR_Y_N[3]];    ## FMC_HPC_LA15_N
-#set_property PACKAGE_PIN AC24 [get_ports CLR_Y_P[2]];   ## FMC_HPC_LA14_P
-#set_property PACKAGE_PIN AD24 [get_ports CLR_Y_N[2]];   ## FMC_HPC_LA14_N
-#set_property PACKAGE_PIN AA22 [get_ports CLR_Y_P[1]];   ## FMC_HPC_LA13_P
-#set_property PACKAGE_PIN AA23 [get_ports CLR_Y_N[1]];   ## FMC_HPC_LA13_N
-#set_property PACKAGE_PIN AF23 [get_ports CLR_Y_P[0]];   ## FMC_HPC_LA12_P
-#set_property PACKAGE_PIN AF24 [get_ports CLR_Y_N[0]];   ## FMC_HPC_LA12_N
+#set_property PACKAGE_PIN Y22 [get_ports CLR_Z_P[3]];    ## FMC_HPC_LA15_P
+#set_property PACKAGE_PIN Y23 [get_ports CLR_Z_N[3]];    ## FMC_HPC_LA15_N
+#set_property PACKAGE_PIN AC24 [get_ports CLR_Z_P[2]];   ## FMC_HPC_LA14_P
+#set_property PACKAGE_PIN AD24 [get_ports CLR_Z_N[2]];   ## FMC_HPC_LA14_N
+#set_property PACKAGE_PIN AA22 [get_ports CLR_Z_P[1]];   ## FMC_HPC_LA13_P
+#set_property PACKAGE_PIN AA23 [get_ports CLR_Z_N[1]];   ## FMC_HPC_LA13_N
+#set_property PACKAGE_PIN AF23 [get_ports CLR_Z_P[0]];   ## FMC_HPC_LA12_P
+#set_property PACKAGE_PIN AF24 [get_ports CLR_Z_N[0]];   ## FMC_HPC_LA12_N
 
 #set_property PACKAGE_PIN AG21 [get_ports CLR_ZCLK_P];   ## FMC_HPC_LA01_CC_P
 #set_property PACKAGE_PIN AH21 [get_ports CLR_ZCLK_N];   ## FMC_HPC_LA01_CC_N

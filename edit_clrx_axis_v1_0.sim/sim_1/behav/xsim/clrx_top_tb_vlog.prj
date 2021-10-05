@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../edit_clrx_axis_v1_0.srcs/sources_1/new/clkgn.v" \
+"../../../../edit_clrx_axis_v1_0.srcs/sources_1/new/clrx_intf.v" \
+"../../../../edit_clrx_axis_v1_0.srcs/sources_1/new/node.v" \
+"../../../../edit_clrx_axis_v1_0.srcs/sources_1/new/sitpo.v" \
+"../../../../edit_clrx_axis_v1_0.srcs/sim_1/new/clrx_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

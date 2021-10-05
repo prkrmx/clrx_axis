@@ -1,0 +1,180 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Sun Oct  3 14:27:44 2021
+| Host         : idev running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_drc -file clrx_axis_v1_0_drc_opted.rpt -pb clrx_axis_v1_0_drc_opted.pb -rpx clrx_axis_v1_0_drc_opted.rpx
+| Design       : clrx_axis_v1_0
+| Device       : xc7z045ffg900-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++------------+------------------+----------------------------------------------------+------------+
+| Rule       | Severity         | Description                                        | Violations |
++------------+------------------+----------------------------------------------------+------------+
+| NSTD-1     | Critical Warning | Unspecified I/O Standard                           | 1          |
+| UCIO-1     | Critical Warning | Unconstrained Logical Port                         | 1          |
+| PORTPROP-2 | Warning          | selectio_diff_term                                 | 12         |
+| REQP-101   | Warning          | enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND | 5          |
+| REQP-1577  | Warning          | Clock output buffering                             | 1          |
+| REQP-1580  | Warning          | Phase alignment                                    | 5          |
+| ZPS7-1     | Warning          | PS7 block required                                 | 1          |
++------------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+152 out of 152 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: CC_n[3:0], CC_p[3:0], XCHN_n[3:0], XCHN_p[3:0], m00_axis_tdata[31:0],
+m00_axis_tstrb[3:0], s00_axi_araddr[2], s00_axi_araddr[3],
+s00_axi_awaddr[2], s00_axi_awaddr[3], s00_axi_bresp[1:0],
+s00_axi_rdata[31:0], s00_axi_rresp[1:0], s00_axi_wdata[31:0],
+s00_axi_wstrb[3:0] (the first 15 of 39 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+152 out of 152 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: CC_n[3:0], CC_p[3:0], XCHN_n[3:0], XCHN_p[3:0], m00_axis_tdata[31:0],
+m00_axis_tstrb[3:0], s00_axi_araddr[2], s00_axi_araddr[3],
+s00_axi_awaddr[2], s00_axi_awaddr[3], s00_axi_bresp[1:0],
+s00_axi_rdata[31:0], s00_axi_rresp[1:0], s00_axi_wdata[31:0],
+s00_axi_wstrb[3:0] (the first 15 of 39 listed).
+Related violations: <none>
+
+PORTPROP-2#1 Warning
+selectio_diff_term  
+The port STFG_n has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#2 Warning
+selectio_diff_term  
+The port STFG_p has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#3 Warning
+selectio_diff_term  
+The port XCHN_n[0] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#4 Warning
+selectio_diff_term  
+The port XCHN_n[1] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#5 Warning
+selectio_diff_term  
+The port XCHN_n[2] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#6 Warning
+selectio_diff_term  
+The port XCHN_n[3] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#7 Warning
+selectio_diff_term  
+The port XCHN_p[0] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#8 Warning
+selectio_diff_term  
+The port XCHN_p[1] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#9 Warning
+selectio_diff_term  
+The port XCHN_p[2] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#10 Warning
+selectio_diff_term  
+The port XCHN_p[3] has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#11 Warning
+selectio_diff_term  
+The port XCLK_n has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+PORTPROP-2#12 Warning
+selectio_diff_term  
+The port XCLK_p has an invalid DIFF_TERM property value. For the target architecture, IOSTANDARD value DIFF_HSTL_II_18 does not support on-chip input differential termination. The DIFF_TERM property value will be ignored.
+Related violations: <none>
+
+REQP-101#1 Warning
+enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND  
+clrx_inst/node1_inst/clkgn_inst/iserdes_mm: Useless CE2 input pin. With NUM_CE set 1, the CE2 input pin is being ignored.
+Related violations: <none>
+
+REQP-101#2 Warning
+enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND  
+clrx_inst/node1_inst/rxd[0].sitpo_inst/ISERDESE2_inst: Useless CE2 input pin. With NUM_CE set 1, the CE2 input pin is being ignored.
+Related violations: <none>
+
+REQP-101#3 Warning
+enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND  
+clrx_inst/node1_inst/rxd[1].sitpo_inst/ISERDESE2_inst: Useless CE2 input pin. With NUM_CE set 1, the CE2 input pin is being ignored.
+Related violations: <none>
+
+REQP-101#4 Warning
+enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND  
+clrx_inst/node1_inst/rxd[2].sitpo_inst/ISERDESE2_inst: Useless CE2 input pin. With NUM_CE set 1, the CE2 input pin is being ignored.
+Related violations: <none>
+
+REQP-101#5 Warning
+enum_NUM_CE_1_connects_CE2_ACTIVE_connects_CE2_GND  
+clrx_inst/node1_inst/rxd[3].sitpo_inst/ISERDESE2_inst: Useless CE2 input pin. With NUM_CE set 1, the CE2 input pin is being ignored.
+Related violations: <none>
+
+REQP-1577#1 Warning
+Clock output buffering  
+MMCME2_ADV connectivity violation. The signal clrx_inst/node1_inst/clkgn_inst/pllmmcm_px on the clrx_inst/node1_inst/clkgn_inst/MMCME2_BASE_inst/CLKFBOUT pin of clrx_inst/node1_inst/clkgn_inst/MMCME2_BASE_inst does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned and therefore zero hold time at the IO flip-flop(s) may not be met.
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for ISERDESE2 clrx_inst/node1_inst/clkgn_inst/iserdes_mm. This can result in corrupted data. The clrx_inst/node1_inst/clkgn_inst/iserdes_mm/CLK / clrx_inst/node1_inst/clkgn_inst/iserdes_mm/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for ISERDESE2 clrx_inst/node1_inst/rxd[0].sitpo_inst/ISERDESE2_inst. This can result in corrupted data. The clrx_inst/node1_inst/rxd[0].sitpo_inst/ISERDESE2_inst/CLK / clrx_inst/node1_inst/rxd[0].sitpo_inst/ISERDESE2_inst/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#3 Warning
+Phase alignment  
+Unsupported clocking topology used for ISERDESE2 clrx_inst/node1_inst/rxd[1].sitpo_inst/ISERDESE2_inst. This can result in corrupted data. The clrx_inst/node1_inst/rxd[1].sitpo_inst/ISERDESE2_inst/CLK / clrx_inst/node1_inst/rxd[1].sitpo_inst/ISERDESE2_inst/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#4 Warning
+Phase alignment  
+Unsupported clocking topology used for ISERDESE2 clrx_inst/node1_inst/rxd[2].sitpo_inst/ISERDESE2_inst. This can result in corrupted data. The clrx_inst/node1_inst/rxd[2].sitpo_inst/ISERDESE2_inst/CLK / clrx_inst/node1_inst/rxd[2].sitpo_inst/ISERDESE2_inst/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#5 Warning
+Phase alignment  
+Unsupported clocking topology used for ISERDESE2 clrx_inst/node1_inst/rxd[3].sitpo_inst/ISERDESE2_inst. This can result in corrupted data. The clrx_inst/node1_inst/rxd[3].sitpo_inst/ISERDESE2_inst/CLK / clrx_inst/node1_inst/rxd[3].sitpo_inst/ISERDESE2_inst/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

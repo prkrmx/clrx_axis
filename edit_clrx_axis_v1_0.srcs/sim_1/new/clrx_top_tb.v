@@ -55,10 +55,10 @@ module clrx_top_tb();
 
     clrx_intf # (
         .DEBUG ("TRUE")
-    ) clrx_int (
-        .SYSCLK_p   ( sclk),     // Reference clock for input delay control
-        .SYSCLK_n   (~sclk),     // Reference clock for input delay control
-        .rst        (rst),       // Receiver Reset (active high)
+    ) clrx_inst (
+        .sclk   (sclk),     // Reference clock for input delay control
+        .rstn   (~rst),     // Receiver Reset (active high)
+        .hw_rst (rst),
 
         .XCLK_p     (rx_clkin),
         .XCLK_n     (~rx_clkin), 

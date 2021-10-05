@@ -19,6 +19,22 @@
 	)
 	(
 		// Users to add ports here
+		input 		 hw_rst, // Hardware reset active low 
+
+		// Receivers Channel 1 - BASE
+		input		 XCLK_p, XCLK_n, //CH1 clk
+		input [3:0]	 XCHN_p, XCHN_n, //CH1 data
+
+		// Receivers Channel 2 - MEDIUM
+		input		 YCLK_p, YCLK_n, //CH2 clk
+		input [3:0]	 YCHN_p, YCHN_n, //CH2 data
+
+		input		 STFG_p, STFG_n, // Serial to frame grabber
+		output		 STC_p, STC_n, // Serial to camera
+
+		output [3:0] CC_p, CC_n, // Camera control
+		output		 locked, // PLL/MMCM locked
+		output		 valid, // Pixels output valid
 
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -56,6 +72,17 @@
 		output wire  m00_axis_tlast,
 		input wire  m00_axis_tready
 	);
+
+
+//--------------------------------------------------------------
+// Wires and Registers
+//--------------------------------------------------------------
+	wire [4-1:0] cc; // Camera Control signals
+	wire s2fg; // Serial to frame grabber / RX
+	wire s2c; // Serial to camera / TX
+
+
+
 // Instantiation of Axi Bus Interface S00_AXI
 	clrx_axis_v1_0_S00_AXI # ( 
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
@@ -98,7 +125,41 @@
 		.M_AXIS_TREADY(m00_axis_tready)
 	);
 
+
+// Instantiation of Axi Bus Interface M00_AXIS
+    clrx_intf # (
+        .DEBUG ("FALSE")
+	) clrx_inst (
+        .sclk   (m00_axis_aclk),
+        .rstn   (m00_axis_aresetn),
+        .hw_rst	(hw_rst),	
+
+        .XCLK_p	(XCLK_p),
+        .XCLK_n	(XCLK_n), 
+        .XCHN_p	(XCHN_p),
+        .XCHN_n	(XCHN_n),
+
+		.YCLK_p	(YCLK_p),
+        .YCLK_n	(YCLK_n), 
+        .YCHN_p	(YCHN_p),
+        .YCHN_n	(YCHN_n),
+
+		.px_val	(valid),
+		.lckd	(locked)
+    );
+
+
 	// Add user logic here
+
+    IBUFDS # (.DIFF_TERM("TRUE")) s2fg_inst (.O(s2fg), .I(STFG_p), .IB(STFG_n));
+    OBUFDS s2c_inst	 (.I(s2c),  .O(STC_p),  .OB(STC_n));
+
+	genvar	i;
+	generate
+		for (i = 0; i < 4; i = i + 1) begin
+			OBUFDS cc_inst  (.I(cc[i]),  .O(CC_p[i]),  .OB(CC_n[i]));
+		end
+	endgenerate
 
 	// User logic ends
 

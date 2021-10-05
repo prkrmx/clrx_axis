@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="clrx_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="clrx_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="253.987337 us"></ZoomEndTime>
+      <Cursor1Time time="1.543192 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="718"></NameColumnWidth>
+      <ValueColumnWidth column_width="253"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="44" />
+   <wvobject type="logic" fp_name="/clrx_top_tb/sclk">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/rx_clk">
+      <obj_property name="ElementShortName">rx_clk</obj_property>
+      <obj_property name="ObjectShortName">rx_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/rx_data">
+      <obj_property name="ElementShortName">rx_data[27:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[27:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/rx_clkin">
+      <obj_property name="ElementShortName">rx_clkin</obj_property>
+      <obj_property name="ObjectShortName">rx_clkin</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/rx_datain">
+      <obj_property name="ElementShortName">rx_datain[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_datain[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/rx_count">
+      <obj_property name="ElementShortName">rx_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clk_pattern">
+      <obj_property name="ElementShortName">clk_pattern[6:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_pattern[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider9" type="divider">
+      <obj_property name="label">Main</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/sclk">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/hw_rst">
+      <obj_property name="ElementShortName">hw_rst</obj_property>
+      <obj_property name="ObjectShortName">hw_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/XCLK_p">
+      <obj_property name="ElementShortName">XCLK_p</obj_property>
+      <obj_property name="ObjectShortName">XCLK_p</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/XCLK_n">
+      <obj_property name="ElementShortName">XCLK_n</obj_property>
+      <obj_property name="ObjectShortName">XCLK_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/XCHN_p">
+      <obj_property name="ElementShortName">XCHN_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">XCHN_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/XCHN_n">
+      <obj_property name="ElementShortName">XCHN_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">XCHN_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/YCLK_p">
+      <obj_property name="ElementShortName">YCLK_p</obj_property>
+      <obj_property name="ObjectShortName">YCLK_p</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/YCLK_n">
+      <obj_property name="ElementShortName">YCLK_n</obj_property>
+      <obj_property name="ObjectShortName">YCLK_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/YCHN_p">
+      <obj_property name="ElementShortName">YCHN_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">YCHN_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/YCHN_n">
+      <obj_property name="ElementShortName">YCHN_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">YCHN_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/tready">
+      <obj_property name="ElementShortName">tready</obj_property>
+      <obj_property name="ObjectShortName">tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/tdata">
+      <obj_property name="ElementShortName">tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/tvalid">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/tuser">
+      <obj_property name="ElementShortName">tuser</obj_property>
+      <obj_property name="ObjectShortName">tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/tlast">
+      <obj_property name="ElementShortName">tlast</obj_property>
+      <obj_property name="ObjectShortName">tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/lckd">
+      <obj_property name="ElementShortName">lckd</obj_property>
+      <obj_property name="ObjectShortName">lckd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/px_val">
+      <obj_property name="ElementShortName">px_val</obj_property>
+      <obj_property name="ObjectShortName">px_val</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/idly_rst">
+      <obj_property name="ElementShortName">idly_rst</obj_property>
+      <obj_property name="ObjectShortName">idly_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/idly_rdy">
+      <obj_property name="ElementShortName">idly_rdy</obj_property>
+      <obj_property name="ObjectShortName">idly_rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/locked">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/px_clk">
+      <obj_property name="ElementShortName">px_clk</obj_property>
+      <obj_property name="ObjectShortName">px_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/px_rdy">
+      <obj_property name="ElementShortName">px_rdy</obj_property>
+      <obj_property name="ObjectShortName">px_rdy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/px_data">
+      <obj_property name="ElementShortName">px_data[27:0]</obj_property>
+      <obj_property name="ObjectShortName">px_data[27:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/lval">
+      <obj_property name="ElementShortName">lval</obj_property>
+      <obj_property name="ObjectShortName">lval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/fval">
+      <obj_property name="ElementShortName">fval</obj_property>
+      <obj_property name="ObjectShortName">fval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/dval">
+      <obj_property name="ElementShortName">dval</obj_property>
+      <obj_property name="ObjectShortName">dval</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/spare">
+      <obj_property name="ElementShortName">spare</obj_property>
+      <obj_property name="ObjectShortName">spare</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/pixels">
+      <obj_property name="ElementShortName">pixels[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixels[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/\genblk1.match ">
+      <obj_property name="ElementShortName">\genblk1.match </obj_property>
+      <obj_property name="ObjectShortName">\genblk1.match </obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/clrx_top_tb/clrx_inst/\genblk1.match_lt ">
+      <obj_property name="ElementShortName">\genblk1.match_lt </obj_property>
+      <obj_property name="ObjectShortName">\genblk1.match_lt </obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/\genblk1.px_count ">
+      <obj_property name="ElementShortName">\genblk1.px_count [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\genblk1.px_count [7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/\genblk1.px_last ">
+      <obj_property name="ElementShortName">\genblk1.px_last [27:0]</obj_property>
+      <obj_property name="ObjectShortName">\genblk1.px_last [27:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/clrx_top_tb/clrx_inst/DEBUG">
+      <obj_property name="ElementShortName">DEBUG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEBUG[31:0]</obj_property>
+   </wvobject>
+</wave_config>
